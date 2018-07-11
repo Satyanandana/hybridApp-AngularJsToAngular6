@@ -13,6 +13,9 @@ angular.
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
+       when('/ng2-demo', {
+        template: '<app-ad-panel></app-ad-panel>' // Angular component
+      }).
         otherwise('/phones');
     }
   ]);

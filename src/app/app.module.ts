@@ -5,6 +5,7 @@ import {downgradeComponent, UpgradeModule} from '@angular/upgrade/static';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdPanelComponent } from './components/ad-panel/ad-panel.component';
+import { phoneServiceProvider } from './upgradedNg1Services/app.phone.service';
 
 
 declare var angular: any;
@@ -25,7 +26,7 @@ angular.module('phonecatApp')
     UpgradeModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [phoneServiceProvider],
  // bootstrap: [AppComponent]
   entryComponents: [AdPanelComponent]
 })
