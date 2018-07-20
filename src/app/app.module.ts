@@ -9,7 +9,7 @@ import { phoneServiceProvider } from './upgradedNg1Services/app.phone.service';
 
 export class CustomHandlingStrategy implements UrlHandlingStrategy {
   shouldProcessUrl(url) {
-    return url.toString().startsWith('/ng2-route') || url.toString() === '/';
+    return url.toString().startsWith('/ng2-route') || url.toString().startsWith('/orders') || url.toString().startsWith('/customers') || url.toString() === '/';
   }
   extract(url) { return url; }
   merge(url, whole) { return url; }

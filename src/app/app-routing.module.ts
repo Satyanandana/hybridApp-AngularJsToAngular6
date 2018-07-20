@@ -12,7 +12,15 @@ const routes: Routes = [
   {
     path: 'ng2-route',
     component: AdPanelComponent
-  }
+  },
+  {
+    path: 'customers',
+    loadChildren: './customers/customers.module#CustomersModule'
+  },
+  {
+    path: 'orders',
+    loadChildren: './orders/orders.module#OrdersModule'
+  },
 ];
 
 @NgModule({
